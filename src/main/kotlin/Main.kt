@@ -3,14 +3,15 @@ package org.example
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    val calculator = Calculator()
+    val sum = calculator.add(5.0, 3.0)      // Returns 8.0
+    val difference = calculator.subtract(10.0, 4.0)  // Returns 6.0
+    val product = calculator.multiply(2.0, 3.0)    // Returns 6.0
+    val quotient = calculator.divide(10.0, 2.0)    // Returns 5.0
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+    //pruebas
+    println("Suma: $sum")
+    println("Resta: $difference")
+    println("Multiplicación: $product")
+    println("Division: $quotient")
 }
