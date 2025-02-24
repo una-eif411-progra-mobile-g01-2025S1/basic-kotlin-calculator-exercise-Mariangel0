@@ -12,7 +12,6 @@ public class CalculatorTest {
 
     private val outputStreamCaptor = ByteArrayOutputStream()
 
-    private val lineSeparator = System.getProperty("line.separator")
 
     // Redirect system output to capture stream for possible output verification
     @BeforeEach
